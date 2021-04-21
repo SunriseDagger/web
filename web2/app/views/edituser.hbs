@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование пользователя</title>
+    <meta charset="utf-8" />
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Редактирование пользователя</h1>
+    <form action="/edituser" method="POST">
+        <input type="hidden" name="idu" value="{{user.idu}}" />
+        <label>Логин</label><br>
+        <input name="login" value="{{user.login}}" class="field" /><br><br>
+        <label>Имя</label><br>
+        <input name="nameu" value="{{user.nameu}}" class="field" /><br><br>
+        <label>Фамилия</label><br>
+        <input name="lastname" value="{{user.lastname}}" class="field" /><br><br>
+        <label>Отчество</label><br>
+        <input name="patronymics" value="{{user.patronymics}}" class="field" /><br><br>
+        <label>Статус</label><br>
+        <input name="statusu" value="{{user.statusu}}" class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>

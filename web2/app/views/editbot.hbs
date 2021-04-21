@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование бота</title>
+    <meta charset="utf-8" />
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Редактирование бота</h1>
+    <form action="/editbot" method="POST">
+        <input type="hidden" name="idb" value="{{user.idb}}" />
+        <label>Идентификатор</label><br>
+        <input name="idbot" value="{{user.idbot}}" class="field" /><br><br>
+        <label>Имя</label><br>
+        <input name="nameb" value="{{user.nameb}}" class="field" /><br><br>
+        <label>Описание</label><br>
+        <input name="description" value="{{user.description}}" class="field" /><br><br>
+        <label>Логин владельца</label><br>
+        <input name="loginofowner" value="{{user.loginofowner}}" class="field" /><br><br>
+        <label>Статус</label><br>
+        <input name="statusb" value="{{user.statusb}}" class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>
