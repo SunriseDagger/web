@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous">
+
+    <title>Кутузова Ирина</title>
+    <style>
+        h1 {
+            color: purple;
+            font-family: Times New Roman;
+        }
+
+        p {
+            color: navy;
+            font-family: Times New Roman;
+            font-size: 19px;
+            width: 80%;
+            text-indent: 20px;
+        }
+    </style>
+
+</head>
+<body background=".\Resource\111.jpeg">
+    <h1><em>Привет! Меня зовут Ирина.</em></h1>
+    <img src=".\Resource\Ira.jpg" width="200" height="255" alt="lorem">
+    <h2>Откуда я?</h2>
+    <p>Я приехала из Хабаровска. Долгое время искала то, кем хочу стать. Однако, по стечению обстоятельств, отправившись в физико-математический лагерь, я окончательно поняла, что моё будущее в программировании.</p>
+
+    <h2>А что было дальше?</h2>
+    <p>Я сдала экзамены и приехала сюда, для того чтобы поступить в НГУ. Но, в конечном итоге, после посещения НГТУ решила остаться здесь. И не прогадала.</p>
+
+    <h2>Что будет потом?</h2>
+    <p>Я не знаю ☺, но я правда надеюсь, что стану специалистов по большим данным или искуственному интеллекту. Хотелось бы создавать человекоподобных роботов, а именно их начинку. А пока... я буду просто учиться)</p>
+
+    <h2>P.S. А это я просто так создала несколько страничек по прекрасным животным:</h2>
+    <a href="Irbis.html">Снежный барс</a><br>
+    <a href="Wolf.html">Полярный волк</a><br>
+    <a href="Owl.html">Полярная сова</a>
+
+
+    <hr>
+    <p>А еще вы можете оставить свой комментарий на моей страничке, и я вам обязательно отвечу!</p>
+
+    <div class="container">
+
+        <div class="row">
+
+            <h1>Добавление комментария</h1>
+            <form method="POST">
+                <label>Имя</label><br>
+                <input name="name" class="field" /><br><br>
+                <label>Комментарий</label><br>
+                <input name="comment" class="field" style="width: 825px; height: 50px;" /><br><br>
+                <input type="submit" value="Отправить" />
+            </form>
+        </div>
+        <h1>Список комментариев</h1>
+        <table>
+            {{#each users}}
+            <p>
+                {{this.data}}<br>
+                {{this.name}}<br>
+                {{this.comment}}<br>
+            </p>
+            {{/each}}
+        </table>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список комментариев</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Добавление комментария</h1>
+    <form method="POST">
+        <label>Имя</label><br>
+        <input name="name" class="field" /><br><br>
+        <label>Комментарий</label><br>
+        <input name="comment" class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+    <h1>Список комментариев</h1>
+    <table>
+        <tr><th>Name</th><th>Age</th><th></th></tr>
+        {{#each users}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.age}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
+<div class="col-lg-6">
+    <form>
+        <div class="form-group">
+            <label for="comment-name">Имя:</label>
+            <input type="text" class="field" id="comment-name" placeholder="Ваше имя">
+        </div>
+        <div class="form-group">
+            <label for="comment-body">Комментарий:</label>
+            <input type="text" class="form-control" id="comment-body" placeholder="Ваш комментарий">
+        </div>
+        <div class="form-group text-right">
+            <button type="submit" id="comment-add" class="btn btn-primary">Добавить</button>
+        </div>
+    </form>
+</div>
