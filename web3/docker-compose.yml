@@ -1,0 +1,42 @@
+version: '3'
+services:     
+  app1:
+    image: myapp1
+    build: ./app1
+    ports:
+      - '3002:3002'
+    volumes: 
+      - ./app1:/app1
+      - /app1/node_modules
+    depends_on:
+      - db
+      - app
+
+  app:
+      image: myapp
+      build: ./app
+      ports:
+        - '3003:3003'
+      volumes: 
+        - ./app:/app
+        - /app/node_modules
+      depends_on:
+        - db 
+
+  db:
+    image: database
+    build: ./db
+    environment:
+      MYSQL_USER: 'mysql'
+      MYSQL_DATABASE: 'botstate'
+      MYSQL_PASSWORD: 'Irinka_2000'
+      MYSQL_ROOT_PASSWORD: 'Irinka_2000'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'Irinka_2000'
+      MYSQL_RANDOM_ROOT_PASSWORD: 'Irinka_2000'
+    restart: always
+    ports: 
+      - '3333:3333'
+
+volumes:
+    db-config:
+    db-data:

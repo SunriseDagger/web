@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Список пользователей</title>
+    <meta charset="utf-8" />
+    <style>
+        table {
+            width: 100%;
+            border: 4px double black; 
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left; 
+            background: #ccc;
+            padding: 5px; 
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 5px; 
+            border: 1px solid black; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Здравствуйте</h1>
+    <h2>Список пользователей</h2>
+    <p><a href="/registration">Зарегестрировать пользователя</a></p>
+    <table>
+        <tr><th>Логин</th><th>Пароль</th><th>Имя</th><th>Фамилия</th><th>Отчество</th><th>Дата регистрации</th><th>Дата последнего входа</th><th>Статус пользователя (админ или нет)</th><th></th></tr>
+        {{#each users}}
+        <tr>
+            <td>{{this.login}}</td>
+            <td>{{this.pass}}</td>
+            <td>{{this.nameu}}</td>
+            <td>{{this.lastname}}</td>
+            <td>{{this.patronymics}}</td>
+            <td>{{this.dateofregistration}}</td>
+            <td>{{this.datelastconnect}}</td>
+            <td>{{this.statusu}}</td>
+            <td>
+                <a href="/edituser/{{this.idu}}">Редактировать</a>|
+                <form action="deleteuser/{{this.idu}}" method="POST" style="display:inline;">
+                    <input type="submit" value="Удалить" />
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+    <h2>Список ботов</h2>
+    <p><a href="/addbot">Добавить бота</a></p>
+    <table>
+        <tr><th>Id бота</th><th>Имя</th><th>Описание</th><th>Логина владельца</th><th>Статус</th><th>Дата создания</th><th>Дата последней конфигурации</th><th></th></tr>
+        {{#each bots}}
+        <tr>
+            <td>{{this.idbot}}</td>
+            <td>{{this.nameb}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.loginofowner}}</td>
+            <td>{{this.statusb}}</td>
+            <td>{{this.dateofbirth}}</td>
+            <td>{{this.datelastconfigurate}}</td>
+            <td>
+                <a href="/editbot/{{this.idb}}">Редактировать</a>|
+                <form action="deletebot/{{this.idb}}" method="POST" style="display:inline;">
+                    <input type="submit" value="Удалить" />
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\МSI\source\repos\NodejsUserAdmin\NodejsUserAdmin\obj\Debug\NodejsUserAdmin.njsprojAssemblyReference.cache
+C:\Users\МSI\source\repos\NodejsUserAdmin\NodejsUserAdmin\obj\Debug\NodejsUserAdmin.njsproj.CoreCompileInputs.cache
+C:\Users\МSI\source\repos\NodejsUserAdmin\NodejsUserAdmin\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\МSI\source\repos\NodejsUserAdmin3\NodejsUserAdmin\obj\Debug\NodejsUserAdmin.njsprojAssemblyReference.cache
+C:\Users\МSI\source\repos\NodejsUserAdmin3\NodejsUserAdmin\obj\Debug\NodejsUserAdmin.njsproj.CoreCompileInputs.cache
+C:\Users\МSI\source\repos\NodejsUserAdmin3\NodejsUserAdmin\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,6 @@
+C:\Users\PM82R\source\repos\StateAPI\StateAPI\obj\Debug\StateAPI.njsprojAssemblyReference.cache
+C:\Users\PM82R\source\repos\StateAPI\StateAPI\obj\Debug\StateAPI.njsproj.CoreCompileInputs.cache
+C:\Users\PM82R\source\repos\StateAPI\StateAPI\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\PM82M\Downloads\StateAPI\StateAPI\obj\Debug\StateAPI.njsprojAssemblyReference.cache
+C:\Users\PM82M\Downloads\StateAPI\StateAPI\obj\Debug\StateAPI.njsproj.CoreCompileInputs.cache
+C:\Users\PM82M\Downloads\StateAPI\StateAPI\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование бота</title>
+    <meta charset="utf-8" />
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Редактирование бота</h1>
+    <form action="/editbotUser" method="POST">
+        <input type="hidden" name="id" value="{{user.id}}" />
+        <label>Имя</label><br>
+        <input name="name" value="{{user.name}}" class="field" /><br><br>
+        <label>Статус</label><br>
+        <input name="status" value="{{user.status}}" class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>

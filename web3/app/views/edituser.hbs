@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование пользователя</title>
+    <meta charset="utf-8" />
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Редактирование пользователя</h1>
+    <form action="/edituser" method="POST">
+        <input type="hidden" name="id" value="{{user.id}}" />
+        <label>Логин</label><br>
+        <input name="login" value="{{user.login}}" class="field" /><br><br>
+        <label>Пароль</label><br>
+        <input name="pass" value="{{user.pass}}" class="field" /><br><br>
+        <label>Статус</label><br>
+            <label>Дать права админа:</label>
+        <input id="admin" name="admin" type="checkbox" value="{{user.admin}}" class="field" /><br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>
